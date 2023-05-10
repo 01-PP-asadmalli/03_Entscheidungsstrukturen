@@ -75,38 +75,58 @@
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
-job = "driver";                                         // ...fährt Taxi/UBER
-// job = "diver";                                          // .. taucht im Rhein!
-// job = "arist";                                          // .. malt ein Bild!
-// job = "Polit";                                          // .. macht etwas anders! -->default
-// job = "teacher";                                        // .. unterrichtet!
-// job = "instructor";                                     // .. unterrichtet!
+// job = "driver";                                         // ...fährt Taxi/UBER
+// // job = "diver";                                          // .. taucht im Rhein!
+// // job = "arist";                                          // .. malt ein Bild!
+// // job = "Polit";                                          // .. macht etwas anders! -->default
+// // job = "teacher";                                        // .. unterrichtet!
+// // job = "instructor";                                     // .. unterrichtet!
 
 
-switch (job) 
+// switch (job) 
+// {
+//     case "driver":                                      // ( == )
+//         console.log (firstName,"fährt Taxi");
+//         break;
+//     case "diver":                                      
+//         console.log (firstName,"taucht im Rhein!");
+//         break;
+//     case "arist":                                      
+//         console.log (firstName,"malt ein Bild!");
+//         break;
+//     case "teacher": 
+//     case "instructor":                                     
+//         console.log (firstName,"unterrichtet!");
+//         break;
+
+//     default:
+//         console.log (firstName,"macht etwas anders!");
+//         break;
+// }
+
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const a = 2;
+
+switch (cond) 
 {
-    case "driver":                                      // ( == )
-        console.log (firstName,"fährt Taxi");
-        break;
-    case "diver":                                      
-        console.log (firstName,"taucht im Rhein!");
-        break;
-    case "arist":                                      
-        console.log (firstName,"malt ein Bild!");
-        break;
-    case "teacher": 
-    case "instructor":                                     
-        console.log (firstName,"unterrichtet!");
+    case (a==1):
+        console.log ("a ist gleich 1!");  
         break;
 
+    case (a==2):
+        console.log ("a ist gleich 2!");  
+        break;
+    
     default:
-        console.log (firstName,"macht etwas anders!");
+        console.log("a hat einen anderen Wert!");
         break;
 }
-
 
 
 
